@@ -1,0 +1,19 @@
+<h1>Introduce Nueva Torre</h1>
+
+<%= form_for @tower do |f| %>
+
+  <p>
+    <%= f.label :name, "Nombre" %><br>
+    <%= f.text_area :name %>
+  </p>
+
+  <p>
+    <%= f.label :keeper, "Portero" %><br>
+    <%= f.text_area :keeper %>
+  </p>
+
+  
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
