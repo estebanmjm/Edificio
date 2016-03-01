@@ -1,0 +1,19 @@
+<h1>Lista de Residentes</h1>
+
+
+<ul>
+	<% @user.each do |user| %>
+
+		<li>
+		<p>Nombre del residente: <%= user.name %></p>
+		<p>Documento de identidad: <%= user.document %></p>
+		<p>Apartamento en el que vive: <%= user.apartment %></p>
+
+		<%= link_to"editar", edit_user_path(user)%> <
+		<%= link_to"eliminar", user_path(user), method: :delete, data: {confirm: "estas seguro?"} %>
+		</li>
+	
+	<% end %>
+</ul>
+
+<%= link_to "Agregar Residente", new_user_path %>

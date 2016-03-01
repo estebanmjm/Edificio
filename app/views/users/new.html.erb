@@ -1,0 +1,23 @@
+<h1>Introduce Nuevo Residente</h1>
+
+<%= form_for @user do |f| %>
+
+  <p>
+    <%= f.label :name, "Nombre" %><br>
+    <%= f.text_area :name %>
+  </p>
+
+  <p>
+    <%= f.label :doument, "Documento de identidad" %><br>
+    <%= f.text_area :document %>
+  </p>
+
+  <p>
+    <%= f.label :apartment, "Apartamento" %><br>
+    <%= f.text_area :apartment %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

@@ -16,6 +16,8 @@ Rails.application.routes.draw do
 
   # Example resource route with options:
     resources :towers
+    resources :users
+    resources :apartments
   #     member do
   #       get 'short'
   #       post 'toggle'

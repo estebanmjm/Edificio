@@ -1,0 +1,29 @@
+<h1>Actualizar Apartamento</h1>
+
+<%= form_for @apartment do |f| %>
+<%= link_to "ver todas", apartment_path %>
+
+<p>
+    <%= f.label :number, "Número" %><br>
+    <%= f.text_area :number %>
+</p>
+
+ <p>
+    <%= f.label :floor, "Piso" %><br>
+    <%= f.text_area :floor %>
+ </p>
+
+ <p>
+    <%= f.label :tower, "Torre a la que pertence" %><br>
+    <%= f.text_area :tower %>
+</p>
+
+<p>
+    <%= f.label :inhabitants, "Número de ocupantes" %><br>
+    <%= f.text_area :inhabitants %>
+</p>
+
+ <p>
+    <%= f.submit %>
+ </p>
+<% end %>
