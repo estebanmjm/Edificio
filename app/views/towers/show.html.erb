@@ -1,0 +1,19 @@
+<h1>Torre</h1>
+
+<%= form_for @tower do |f| %> 
+ <p>
+   <%= f.label :name, "tower" %><br>
+   <%= f.text_area :name %>
+ </p>
+
+ <p>
+   <%= f.submit %>
+ </p>
+<% end %>
+
+
+
+<%= link_to "Agregar Torre", new_tower_path %>
+
+   
+ 

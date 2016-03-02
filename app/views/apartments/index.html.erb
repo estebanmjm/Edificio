@@ -9,7 +9,7 @@
 		<p>Torre a la que pertenece: <%= apartment.tower %></p>
 		<p>Número de habitantes: <%= apartment.inhabitants %></p>
 
-		<%= link_to"editar", edit_apartment_path(apartment)%> <
+		<%= link_to"editar", edit_apartment_path(apartment)%> 
 		<%= link_to"eliminar", apartment_path(apartment), method: :delete, data: {confirm: "estas seguro?"} %>
 		</li>
 	

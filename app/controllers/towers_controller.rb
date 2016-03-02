@@ -14,6 +14,10 @@ class TowersController < ApplicationController
 		#puts tweet_params
 	end
 
+	def show
+		@tower = Tower.find(params[:id])
+	end
+
 	def edit
 		@tower = Tower.find(params[:id])
 	end
