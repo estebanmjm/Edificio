@@ -1,4 +1,4 @@
 class Apartment < ActiveRecord::Base
 	has_many :users
-	belongs to :tower
+	belongs_to :tower
 end
